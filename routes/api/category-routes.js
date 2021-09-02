@@ -6,11 +6,12 @@ const { Category, Product } = require('../../models');
 router.get('/', async (req, res) => {
   try {
     const categoriesData = await Category.findAll({
-      include: [{ model: Product, as: 'Products' }]
+      include: [{ model: Product, as: 'products' }]
     });
     res.status(200).json(categoriesData);
   } catch (err) {
-    res.status(500).json(err);
+    console.log(err);
+    // res.status(500).json(err);
   }
 });
 
@@ -33,8 +34,14 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Products
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new category
+  try {
+    const newCategoryData = await Category.create(req.body);
+    res.status(200).json(newCategoryData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
 });
 
 router.put('/:id', (req, res) => {
