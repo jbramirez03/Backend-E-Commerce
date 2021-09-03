@@ -1,7 +1,7 @@
 {
-  "name": "module-13-challenge-orm",
+  "name": "Backend-E-commerce",
   "version": "1.0.0",
-  "description": "",
+  "description": "Interact with an e-commerce database using backend principles and sequelize",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
