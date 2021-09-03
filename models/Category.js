@@ -1,9 +1,13 @@
+// Require sequelize in order to use syntax in sequelize to create a new model
 const { Model, DataTypes } = require('sequelize');
 
+// Require connection in order to sync with database
 const sequelize = require('../config/connection.js');
 
+// Define category as a new model
 class Category extends Model {}
 
+// Initialize the catergory model by creating columns and setting up flags
 Category.init(
   {
     id: {
