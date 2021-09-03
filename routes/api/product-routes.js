@@ -2,26 +2,32 @@ const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // The `/api/products` endpoint
-// get all products
+// Route to get all products
 router.get('/', async (req, res) => {
   try {
+    // Using the findAll method in the sequelize library get all Products in database
     const productsData = await Product.findAll({
+      // Include category this product falls under and the tags for products through the ProductTag model
       include: [{model: Category, as: 'category'}, {model: Tag, through: ProductTag, as: 'tagIds'}]
     });
+    // Set status to 200 if there is no errors then return all of the products in json format
     res.status(200).json(productsData);
+    // If there are any errors they will be in the catch, a status of 500 will be returned and the error will be returned
   } catch (err) {
     res.status(500).json(err)
   }
 });
 
-// get one product
+// Route to get a single product based on its 'id' value
 router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   try {
+    // Using the findByPk method in order to return a single product using the req.params.id to specify which product to return
     const singleProductData = await Product.findByPk(req.params.id, {
       include: [{model: Category, as: 'category'}, {model: Tag, through: ProductTag, as: 'tagIds'}]
     });
     
+    // If there is no product with the id in the params part of the url then a 404 status is returned and an error message in json format
     if(!singleProductData){
       res.status(404).json({message: 'No product found with this id.'});
       return;
