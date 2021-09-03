@@ -16,6 +16,7 @@ ProductTag.init(
       primaryKey: true,
       autoIncrement: true
     },
+    // Set a foreign key for product_id by referencing the id column in the 'products' model
     product_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -24,6 +25,7 @@ ProductTag.init(
         unique: false
       }
     },
+    // Set a foreign key for tag_id by referencing the id column in the 'tags' model
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
