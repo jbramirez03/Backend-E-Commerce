@@ -30,4 +30,5 @@ Category.init(
   }
 );
 
+// Export model in order to be used in index to define association to other models and to be used in routes
 module.exports = Category;
