@@ -27,7 +27,7 @@ Jason Barrera-Ramirez<br><br>
 ## License
 This Project is covered by the [MIT] license
 ## Challenges
-The main challenge with this project was creating the association between models in the database and making the foreign keys work for the different models. This challenge was overcome through looking at the documentation for sequelize model relationships, [Docs](https://sequelize.org/master/manual/advanced-many-to-many.html). Another challenge was found in the routes, when trying to include different models associated to the current model being return in the rest client. This was solved by using the `through` key in the **include** array.
+The main challenge with this project was creating the association between models in the database and making the foreign keys work for the different models. This challenge was overcome through looking at the documentation for sequelize model relationships, [Docs](https://sequelize.org/master/manual/advanced-many-to-many.html). Another challenge was found in the routes, when trying to include different models associated to the current model being returned in the rest client. This was solved by using the `through` key in the **include** array.
 ## Technologies
 <img align="left" width="26px" alt="Node.js" src="https://user-images.githubusercontent.com/82244776/131235189-bd5f5fc2-6802-4f79-b553-267a05f37ab3.png">
 <img align="left" width="27px" alt="mysql" src="https://user-images.githubusercontent.com/82244776/131235260-c522d5d8-e58d-4bd9-82ec-a3cc3c119ccd.png">
