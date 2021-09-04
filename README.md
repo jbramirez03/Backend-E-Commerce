@@ -21,6 +21,10 @@ It also includes the use of a server and the use of routes to make calls to the 
 ## Usage
 In order to begin with this project you must first run `npm i` in order to install all of the packages listed as dependencies in the package.json file. You have to enter your mysql credentials in the .env file at the root of the project in order for the database connection to work. The next thing you want to do is create your database by sourcing the schema.sql file in the terminal or through the mysql extension in VS-code. Once the database is created you must seed the database with data by running the line `npm run seed` in the terminal.
 After all of these steps are completed you can run the line `npm start` in your terminal and the models will be created and the server will be live for you to be able to run the different routes in a rest client such as *Postman* or *Insomnia*.
+## Functionality Screenshots
+<img width="1440" alt="Screen Shot 2021-09-03 at 11 37 34 PM" src="https://user-images.githubusercontent.com/82244776/132081217-6a58eb4a-1845-4a54-8a7e-933a41998cd0.png">
+<img width="1440" alt="Screen Shot 2021-09-03 at 11 37 53 PM" src="https://user-images.githubusercontent.com/82244776/132081227-9e40e872-7fec-40f3-9a00-fc40d2cd3f61.png">
+
 ## Credits
 Jason Barrera-Ramirez<br><br>
 [<img align="left" width="28px" alt="LinkedIn" src="https://user-images.githubusercontent.com/82244776/128110957-497edff3-59dc-41d6-89bc-be7570e441fe.png" />][LinkedIn]<br><br>
