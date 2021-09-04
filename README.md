@@ -14,6 +14,7 @@ It also includes the use of a server and the use of routes to make calls to the 
 - [License](#license)
 - [Challenges](#challenges)
 - [Technologies](#technologies)
+- [Npm Packages](#npm-packages)
 - [Future development](#future-development)
 - [How to contribute](#how-to-contribute)
 - [Questions](#questions)
