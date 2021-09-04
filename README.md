@@ -38,6 +38,12 @@ The main challenge with this project was creating the association between models
 <img align="left" width="26px" alt="express" src="https://user-images.githubusercontent.com/82244776/132081029-26f8074c-5c16-40d1-999f-9ee7a64ceb7d.png">
 <img align="left" width="26px" alt="Javascript" src="https://user-images.githubusercontent.com/82244776/128645657-2dad4760-43e6-42a9-90a5-8f8b3f62b4a0.png"><br><br>
 
+## Npm Packages
+* dotenv
+* express
+* mysql2
+* sequelize
+* nodemon
 ## Features
 The main feature for this project is being able to Post,Get,Delete, and update different models in the database. This is done through the use of routes and running a server.
 ## Future Development
